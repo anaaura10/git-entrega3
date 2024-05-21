@@ -1,0 +1,106 @@
+/* reset */
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body{
+background-color: #E6E6DD;
+color: black;
+}
+
+div img .contacto{
+box-sizing: border-box;
+height: 50%;
+}
+
+header{
+background-color: gainsboro;
+color: black;
+margin: 8px 50px;
+padding: 10px 30px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+text-align: center;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+main{
+display: flex;
+ align-items: center;
+ justify-content: center;
+ margin: 0px 50px;
+ flex-wrap: wrap;
+
+
+}
+
+main .textos h1 span{
+    display: block;
+}
+
+main .textos{
+    text-align: center;
+
+}
+
+.parrafo-inicio{
+font-style: italic;
+}
+
+.portafolio-titulo{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+}
+
+
+main div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.footer{
+    text-align: center;
+    color: white;
+    background-color: black;
+
+}
+
+/* MQ tablet */
+
+@media screen and (min-width: 768px){
+
+    main {
+        width: 90%;
+    height: 90%;
+    align-items: center;
+    }
+    
+    /* MQ escritorio */
+    
+    @media screen and (min-width: 1280px) {
+        
+        main{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+}
+    
