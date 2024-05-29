@@ -1,0 +1,18 @@
+/* Error: expected ";".
+ *   ,
+ * 3 |     box-shadow: 3px 3px 4px;
+ *   |               ^
+ *   '
+ *   scss\utilidades\_extend.scss 3:15  @import
+ *   scss\main.scss 6:8                 root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: expected ";".\a   \2577 \a 3 \2502      box-shadow: 3px 3px 4px;\d\a   \2502                ^\a   \2575 \a   scss\\utilidades\\_extend.scss 3:15  @import\a   scss\\main.scss 6:8                 root stylesheet';
+}

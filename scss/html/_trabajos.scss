@@ -1,0 +1,58 @@
+main{
+margin: 0 30%;
+height: 90vh;
+display: grid;
+grid-template-columns: 1fr; 
+grid-template-rows: repeat (4, 25%) ;
+row-gap: 5px;
+align-content: center;
+
+div img{
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+}
+
+}
+
+
+
+
+/* MQ tablet */
+
+@media screen and (min-width: 768px){
+
+    main {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 45%);
+        gap: 5px;
+    }
+    
+    /* MQ escritorio */
+    
+    @media screen and (min-width: 1280px) {
+        
+        main{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 80% 80% 80% 80% ;
+        }
+    
+        main .img-uno{
+            grid-row: span 2;
+        }
+    
+        main .img-dos{
+            grid-row: span 1;
+        }
+    
+        main .img-tres{
+            grid-row: span 3;
+        }
+    
+        main .img-cuatro{
+            grid-row: span 4;
+        }
+    
+    }
+    
+    }
