@@ -1,0 +1,21 @@
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 50px;
+    flex-wrap: wrap;
+
+    .textos{
+        text-align: center;
+        h1{
+            span{
+                display: block;
+            }
+        }
+    }
+}
+
+div img .contacto{
+    box-sizing: border-box;
+    height: 50%;
+    }

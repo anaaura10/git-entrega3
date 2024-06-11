@@ -1,0 +1,24 @@
+ /* MQ tablet */
+        
+ @media screen and (min-width: 768px){
+        
+    main {
+        width: 90%;
+    height: 90%;
+    align-items: center;
+    }
+    
+    /* MQ escritorio */
+    
+    @media screen and (min-width: 1280px) {
+        
+        main{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+}
+    
